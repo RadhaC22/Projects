@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg-black{
+             background-color: #212121;
+             color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <!-- <div >
+        <h1 id="title" class="heading">DOM learning</h1>
+        <p>Lorem ipsum dolor sit </p>
+    </div>
+    <ul>
+        <li class="list-item">one </li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">four</li> -->
+
+        <div class="parent">
+            <div class="day">monday</div>
+            <div class="day">tuesday</div>
+            <div class="day">wednesday</div>
+            <div class="day">thrusday</div>
+        </div>
+    </ul>
+</body>
+
+<script>
+    const parent = document.querySelector('.parent');
+    // console.log(parent);
+    //  console.log(parent.children); 
+    // //  this gives an html collection
+
+    // console.log(parent.children[1].innerHTML);
+
+    // for (let index = 0; index < parent.children.length; index++) {
+    //     console.log(parent.children[index].innerHTML);
+        
+    // }
+
+    // console.log(parent.firstElementChild);
+    const dayOne = document.querySelector('.day');
+    // console.log(dayOne);
+    // console.log(dayOne.nextElementSibling);
+    // console.log(dayOne.parentElement);
+
+console.log(parent.childNodes);
+
+</script>
+
+</html>
+
+<!-- //go to console window there you can search for any webpage "console.log(document)" this will give you the html of the page for more information you can check for "console.dir(document)" -->
+
+<!-- similary this node list formed looks like array but it not an array whole functin cannot be performed but you can manipulte single elements -->

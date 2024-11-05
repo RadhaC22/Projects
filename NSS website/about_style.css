@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+.banner img{
+    width: 100%;
+}
+.card.mb-3.about2{
+    width:100%;
+    height: 3rem;
+    margin-left: 2rem;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+.card-text{
+    
+    margin-left:3rem;
+    margin-right:20rem;
+}
+
+.blurring {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
+}
+.centered-def {
+    max-height: 200vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centered-def button {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    padding: 0.8rem;
+    margin-top: 20px;
+    color: white;
+}
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* margin-top: 60px; */
+    margin-left: 0px;
+    background-image: url(images/spc.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: 100% 100%; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+.about_heading h2{
+    font-size: 3.5rem;
+}
+.first-card img{
+height: 20rem;
+width: 31rem;
+}
+.first-card{
+    display: flex;
+justify-content: space-evenly;
+}
+.first-card p{
+    height: 20rem;
+    width: 40rem;
+    font-size: 1.3rem;
+    border-right: 0.3rem solid grey;
+}
+.second-card img{
+    height: 20rem;
+    width: 31rem;
+
+    }
+    .second-card{
+        display: flex;
+       justify-content: space-evenly;
+     
+       margin-top: 8rem;
+    }
+    .second-card p{
+        height: 20rem;
+        width: 35rem;
+        font-size: 1.3rem;
+        margin-right: 5rem;
+        border-left: 0.3rem solid grey;
+    }

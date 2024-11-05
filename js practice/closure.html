@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+
+<script>
+//     function init() {
+//   let name = "Mozilla"; // name is a local variable created by init
+//   function displayName() {
+//     // displayName() is the inner function, that forms the closure
+//     console.log(name); // use variable declared in the parent function
+//   }
+//   displayName();
+// }
+// init();
+// here the whole executional context is not given instead its whole lexcial scope is returned from the memory inspite of its whole vanishment of the scope
+// lexical scope- age function return kiya tou sirf poora function nhi uska poora outer scope bhi return ho ja ta h 
+// DRY principle - don't repeat yourself
+
+// function outer(){
+//     let username =  "radha"
+//     function inner(){
+//         let secret = "my123";
+//         console.log("inner",username);
+//     }
+//     console.log(secret);
+    
+//     function inner2(){
+//         console.log("inner2",username);
+//         console.log(secret);
+        
+//     }
+//     inner();
+// }
+// outer()
+// console.log("too outer", username);
+// if function is within a function then there is access to the outer variable to the inner function this is called lexcial scoping but two sibling function cannot have acces for the variable defind within them 
+
+// function clickHandler(color){
+// document.body.style.backgroundColor = `${color}`;
+// }
+// this a real world problem which was faced and hence here the closure saves us
+function clickHandler(color){
+    return function(){
+        document.body.style.backgroundColor = `${color}`;
+    }
+} 
+document.getElementById("orange").onclick = clickHandler("orange");
+document.getElementById("green").onclick = clickHandler("green");
+</script>
+</html>
