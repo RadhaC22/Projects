@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th rowspan="2">
+                Year
+            </th>
+            <th colspan="3">Course Name
+
+            </th>
+
+            <th rowspan="2">total students
+
+            </th>
+
+        </tr>
+
+        <tr>
+            <th>BE</th>
+            <th>ME</th>
+            <th>MSc</th>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>600</td>
+            <td>36</td>
+            <td>50</td>
+            <td>686</td>
+        </tr>
+        <tr>
+            <td>2022</td>
+            <td>620</td>
+            <td>40</td>
+            <td>55</td>
+            <td>705</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>640</td>
+            <td>38</td>
+            <td>60</td>
+            <td>738</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">Grand total</td>
+
+        </tr>
+    </table>
+
+    <script>
+        // var x='5',y=10;
+        // str = "radha";
+        // document.write(str.replace('dha','f'));
+        // document.write(+x+y);
+        // document.write(+115<110);
+        // document.write(typeof typeof(undefined));
+        // document.write(Math.round(17.51));
+
+//         function emp(id,name,sal){
+//             this.id = id;
+//             this.name= name;
+//             this.sal= sal;
+//             this.changeSal = changeSal;
+//             function changeSal(s){
+//                 this.sal= s;
+//             }
+//         }
+//         var e = new emp(101,'radha',1000);
+//         e.changeSal(3000);
+//         // document.write(e.sal);
+//         const {id:ID,name:NAME,sal:SAL} = e;
+//         console.log("id:" + ID); 
+
+// arr = [1,2,3,-1,-2];
+// newarr = arr.filter(x => x>=0).map(x => Math.sqrt(x));
+// document.write("newarr:"+newarr);
+// switch (3) {
+//     case 1:
+//         document.write(1);
+//         break;
+
+//     default:
+//     document.write("no no");
+        
+// }
+
+// function generateTable(tableSize) {
+// let i = 0;
+// if ((tableSize > 0) && (tableSize <= 10000)) { console.log("num : num^2");
+// while (i < tableSize) {
+// console.log(i + " : " + i*i);
+// i++;
+// }
+// }
+// }
+// generateTable(5);
+
+// function sum(x,y){
+//     return ("sum:",x+y);
+// }
+// document.write(sum(5,5));
+
+// ob={age:20};
+// document.write(ob);
+
+
+function isPallindrome(num){
+    let str=num.toString();
+    let start = 0;
+    let end = str.length -1;
+    while(start <= end){
+        if(str[start] != str[end]) return false;
+    }
+    return true;
+}
+document.write(isPallindrome(10010));
+    </script>
+</body>
+</html>
